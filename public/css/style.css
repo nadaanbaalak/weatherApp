@@ -56,11 +56,18 @@ header a {
 }
 #message-1, #message-2{
     font-size: 20px;
-    color: rgb(194, 64, 25);
+    color: black;
+    font-family: "ubunut", "oxygen";
 }
 #searchBtn{
     cursor: pointer;
     border: 1px solid #888888;
     background: #888888;
     color: white;
+}
+
+.about-content{
+    font-size: 20px;
+    color: black;
+    font-family: "ubunut", "oxygen";
 }

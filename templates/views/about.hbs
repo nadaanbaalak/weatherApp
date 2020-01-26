@@ -6,14 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" href="/img/weather.png">
         <link rel='stylesheet' href="./css/style.css"></link>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
         <title>About :: Weather App</title>
     </head>
     <body>
         
         <div class="main-content">
             {{>headers}}
-            <p>This site uses 2 API to fetch Forecast data:</p>
-            <ul>
+            <p class="about-content">This site uses 2 API to fetch Forecast data:</p>
+            <ul class="about-content">
                 <li>Mapbox : To fetch the location Co-ordinates for 2nd API used.</li>
                 <li>DarkSky : To fetch the forecast data for the location specified by location Co-ordinates.</li>
             </ul>
