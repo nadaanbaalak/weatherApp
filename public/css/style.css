@@ -1,0 +1,66 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-image: url('./../img/app-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-image:url('./../img/weatherImg.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+.main-content {
+    flex-grow: 1;
+    
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px;
+}
+
+.searchForm{
+    padding:5px;
+    margin:3px;
+}
+#message-1, #message-2{
+    font-size: 20px;
+    color: rgb(194, 64, 25);
+}
+#searchBtn{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+}

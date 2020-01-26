@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home::Weather App</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel='stylesheet' href="./css/style.css"></link>
+        
+    </head>
+    <body>
+        <div class="main-content">
+            {{>headers}}
+            <form>
+                <input type="text" class="searchForm" placeholder="Location">
+                <button class="searchForm" id="searchBtn">Search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>    
+        {{>footer}}
+        <script src='/js/app.js'></script>
+    </body>
+</html>
