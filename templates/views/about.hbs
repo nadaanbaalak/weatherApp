@@ -12,6 +12,11 @@
         
         <div class="main-content">
             {{>headers}}
+            <p>This site uses 2 API to fetch Forecast data:</p>
+            <ul>
+                <li>Mapbox : To fetch the location Co-ordinates for 2nd API used.</li>
+                <li>DarkSky : To fetch the forecast data for the location specified by location Co-ordinates.</li>
+            </ul>
             <img class = "portrait" src="/img/me.jpeg">        
         </div>
         {{>footer}}
