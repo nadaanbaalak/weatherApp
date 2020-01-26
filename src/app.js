@@ -4,7 +4,7 @@ const app = express();
 const geoCode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const hbs = require('hbs');//required for partials, not for views. 
-const PORT = 3000;
+const port = process.env.PORT||3000;
 //defining path for express config
 const pubicPathDirectory = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/views');
@@ -84,6 +84,6 @@ app.get('*',(req,res)=>{
         text:`Page not found`
     })
 })
-app.listen(PORT,()=>{
-    console.log('Server is up and running')
+app.listen(port,()=>{
+    console.log(`Server is up and running on port ${port}`)
 });

@@ -9,7 +9,7 @@ weatherForm.addEventListener('submit',(event)=>{
     
     const searchLocation = document.querySelector('input').value;
 
-        fetch(`http://localhost:3000/weather?address="${searchLocation}"`).then((response)=>{
+        fetch(`/weather?address="${searchLocation}"`).then((response)=>{
             response.json().then((data)=>{
                 if(data.error)
                 {
@@ -20,6 +20,5 @@ weatherForm.addEventListener('submit',(event)=>{
                     messageTwo.innerText = `It is ${data.summary} with current temperature being ${data.currentTemp} degrees celcius. There's a ${data.rainProbability}% chance of raining.`
                 }
             })
-        })
-    
+        })    
 })
