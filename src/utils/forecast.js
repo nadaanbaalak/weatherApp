@@ -13,7 +13,7 @@ const forecast = (long,lat,cityName,callbackFunction)=>{
         else{
             let summary = response.body.currently.summary
             let currentTemp = response.body.currently.temperature;
-            let rainProbability = response.body.currently.precipProbability;
+            let rainProbability = (response.body.currently.precipProbability)*100;
             let str = {
                 summary : summary,
                 currentTemp : currentTemp,
